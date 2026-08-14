@@ -1,0 +1,169 @@
+```css
+/* Allgemeine Einstellungen */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+
+/* Kopfbereich */
+
+header {
+    background-color: #0052cc;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0 0 25px;
+}
+
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 12px 18px;
+    color: white;
+    text-decoration: none;
+    background-color: #003d99;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #002b6f;
+}
+
+
+/* Hauptinhalt */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #0052cc;
+}
+
+h3 {
+    color: #003d99;
+}
+
+
+/* Bilder */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+
+/* Galerie */
+
+.gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 50%;
+}
+
+
+/* Links */
+
+a {
+    color: #0052cc;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Responsive Darstellung unter 600 Pixeln */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    main {
+        padding: 15px 10px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+}
+```
